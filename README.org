@@ -1,0 +1,10 @@
+* flycheck-soar
+Analyze and check SQL statements using [[https://github.com/XiaoMi/soar][mi soar]]
+** Installation
+From MELPA
+Install the package `flycheck-soar`
+** To enable the
+#+BEGIN_SRC emacs-lisp
+     (eval-after-load 'flycheck
+       '(flycheck-soar-setup))
+#+END_SRC
