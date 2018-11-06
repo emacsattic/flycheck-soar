@@ -1,19 +1,22 @@
-;;; flyckeck-soar.el --- Analyze the SQL statements using mi soar.
-;;
-;;Copyright (C) 2018 zg
-;;
+;;; flycheck-soar.el --- Analyze the SQL statements using mi soar.
+
+;; Copyright (C) 2018 zg
+
 ;; Author: zg <13853850881@163.com>
 ;; URL: https://github.com/tszg/flycheck-soar
 ;; Package-Version: 0
 ;; Package-Requires: ((emacs "25.1") (flycheck "0.22"))
 ;; Keywords: convenience
-;;
+
+
 ;;; Commentary:
+
 ;; Analyze the SQL statements using mi soar
-;;
+
 ;; To enable the
 ;;    (eval-after-load 'flycheck
 ;;      '(flycheck-soar-setup))
+
 
 ;;; Code:
 
@@ -31,6 +34,7 @@
   "Setup flycheck-soar."
   (interactive)
   (add-to-list 'flycheck-checkers 'mi-soar t))
+
 
 (provide 'flycheck-soar)
 
